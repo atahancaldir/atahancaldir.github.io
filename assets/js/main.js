@@ -160,7 +160,7 @@
    */
   new Swiper('.testimonials-slider', {
     speed: 600,
-    loop: true,
+    loop: false, //TURN TO TRUE FOR LOOPING
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -178,7 +178,7 @@
       },
 
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 2, //CHANGE NUMBER OF BOXES
         spaceBetween: 20
       }
     }
