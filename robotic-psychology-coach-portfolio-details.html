@@ -53,36 +53,11 @@
                 <div class="swiper-wrapper align-items-center">
 
                   <div class="swiper-slide">
-                    <div class="aspect-ratio">
-                    <iframe src="https://www.youtube.com/embed/OCSoxlsK3Kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <style>
-                      /* This element defines the size the iframe will take.
-                         In this example we want to have a ratio of 25:14 */
-                      .aspect-ratio {
-                        position: relative;
-                        width: 100%;
-                        height: 0;
-                        padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
-                      }
-                      
-                      /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
-                      .aspect-ratio iframe {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        left: 0;
-                        top: 0;
-                      }
-                      </style>
-                  </div>
-  
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/Theia-II Rover.jpg" alt="" style='height: 100%; width: 100%; object-fit: contain'/>
+                    <img src="assets/img/portfolio/Robotic Psychology Coach.png" alt="" style='height: 100%; width: 100%; object-fit: contain'/>
                   </div>
 
                   <div class="swiper-slide">
-                    <img src="assets/img/portfolio/Theia-II Rover 2.JPG" alt="" style='height: 100%; width: 100%; object-fit: contain'/>
+                    <img src="assets/img/portfolio/Robotic Psychology Coach 2.png" alt="" style='height: 100%; width: 100%; object-fit: contain'/>
                   </div>
   
                 </div>
@@ -92,27 +67,35 @@
             </div>
 
           <div class="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
+            <h3>Robotic Psychology Coach</h3>
             <ul>
-              <li><strong>Category</strong>: Mars Rover</li>
+              <li><strong>Category</strong>: Research Project</li>
               <li><strong>Project date</strong>: 2018-2019</li>
-              <li><a href="https://github.com/OzURover/OzURover" target="_blank">GitHub Repo</a></li>
-              <li><a href="https://rover.ozyegin.edu.tr/en/planetary-rovers/theia-2" target="_blank">Website</a></li>
+              <li>GitHub repo is coming soon...</li>
+              <li><a href="https://cambridge-afar.github.io/" target="_blank">University of Cambridge - AFAR Lab</a></li>
             </ul>
 
-            <p>Hope is the 4th generation rover of the OzU Rover Team </br></br>
-              Ranked 13th among 56 teams in European Rover Challenge (ERC) 2019 in Poland </br></br>
-              
-              I have developed the following modules' software and electronical designs and implementations;
+            <p>In this project, Continual Learning (Lifelong Learning) is used for the personalization
+              of the facial expressions. For the experiments, Pepper Robot is used as a psychology coach. 
+              The robot was able to perform a long dialogue with the user and to consider the user's facial 
+              expressions with their answers, and to produce an answer with this knowledge. Continual learning 
+              is used to learn the facial expressions of the user specific to that user, on the fly. Hence, 
+              it was able to adapt to the facial gestures of each user separately by personalization.</br></br>
+
+              Some of my contributions are as follows:
               <ul>
-                <li>• PyQt5 based, functional GUI for easier use of ROS & SSH connection</li>
-                <li>• Remote control of locomotion and drill systems by ROS (Robot Operating System)</li>
-                <li>• Custom made circuit board for loadcell sensor's data receiving</li>
+                <li>• ROS based experiment environment for the Pepper robot that can work both with the Choregraphe simulation and the real robot</li>
+                <li>• The “Smach” library of ROS is used to implement a state machine logic to manage the states of the robot for the dialogues with the user</li>
+                <li>• Pepper Robot’s camera frames are used to feed the Continual Learning model</li>
+                <li>• Custom logging module that works with ROS successfully. It was saving the workflow of the program along with the unprocessed and processed images.</li>
+                <li>• Google’s speech-to-text API is used to convert the user’s answer into a text format to be processed. For the robot’s speech, Google’s text-to-speech API is used in the simulation, and NAOqi’s own text-to-speech service in the real physical robot.</li>
               </ul>
-            </br>
             
             <b>Publication</b></br>
-            <a href="https://www.researchgate.net/publication/333810691_Gezegen_Gezginlerinde_Kullanilan_Ozerk_Devinim_Stratejilerinin_Karsilastirmali_Analizi" target="_blank">The Comparative Analysis of the Strategies Used in Planetary Rovers’ Autonomous Locomotion</a>
+            <ol>
+              <li><a href="https://arxiv.org/abs/2206.11354" target="_blank">Continual learning for affective robotics: A proof of concept for wellbeing</a></li>
+              <li><a href="https://arxiv.org/abs/2209.03827" target="_blank">Participant Perceptions of a Robotic Coach Conducting Positive Psychology Exercises: A Systematic Analysis</a></li>
+            </ol>
           </div>
 
         </div>
