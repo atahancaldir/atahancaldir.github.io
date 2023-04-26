@@ -162,7 +162,7 @@
     speed: 600,
     loop: false, //TURN TO TRUE FOR LOOPING
     autoplay: {
-      delay: 5000,
+      delay: 10000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -231,13 +231,14 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+
+new Swiper('.portfolio-details-slider', {
     speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
+    loop: false,
+    /*autoplay: {
+      delay: 10000,
       disableOnInteraction: false
-    },
+    },*/
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
