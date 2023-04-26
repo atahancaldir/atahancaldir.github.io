@@ -54,6 +54,14 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+  body::before {
+    background-image: url("../img/bg-mobile.jpg");
+    background-size: cover;
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
